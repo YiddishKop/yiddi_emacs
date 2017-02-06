@@ -1,0 +1,21 @@
+;; close tool bar					;
+(tool-bar-mode -1)
+;; close scroll bar
+(scroll-bar-mode -1)
+;; display line number
+(linum-mode 1)
+;; close start-up
+(setq inhibit-splash-screen t)
+;; open recentf-mode
+(recentf-mode t)
+;; change cursor type to bar
+(setq cursor-type bar)
+
+
+;; bind a hotkey to open my init.el file
+(defun open-my-init-file ()
+  (interactive)
+  (message "start my file")
+  (find-file "~/.emacs.d/init.el"))
+
+(global-set-key (kbd "<f5>") 'open-my-init-file)
