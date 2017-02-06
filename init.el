@@ -45,6 +45,19 @@
 ;; [set]agenda-file
 (setq org-agenda-files '("~/org"))
 (global-set-key (kbd "C-c a") 'org-agenda)
+;; [set]auto revert
+(global-auto-revert-mode t)
+;; [set]stop backup automaticly
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+;; [set]DIY abbreviation
+(abbrev-mode t)
+(define-abbrev-table 'global-abbrev-table '(
+					    ;; signature
+					    ("8yd" "YiddishKop")
+					    ;; emacs regex
+					    ("8ms" "MicroSoft")
+					    ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -72,13 +85,14 @@
 ;; ---------------pkg settings------------------
 ;; [pkgs]add whatever pkg you want here
 (defvar yiddi/packages '(
-			 company
-			 monokai-theme
-			 hungry-delete
-			 counsel
-			 swiper
-			 smartparens
-			 anaconda-mode
+			 company       ;; auto-complete
+			 monokai-theme ;; sublime-like theme
+			 hungry-delete ;; auto-delete many blank space
+			 counsel       ;; work with swiper,enhance search and M-x
+			 swiper        ;; like up
+			 smartparens   ;; auto-complete bracket and quote etc.
+			 anaconda-mode ;; for python-mode
+			 popwin        ;; auto allocate cursor to help window
 			 ) "Default packages")
 (defun yiddi/package-installed-p ()
   (loop for pkg in yiddi/packages
@@ -105,7 +119,9 @@
 (smartparens-global-mode t)
 ;; [pkg] anaconda-mode
 (add-hook 'python-mode-hook 'anaconda-mode)
-
+;; [pkg] popwin
+(require 'popwin)
+(popwin-mode 1)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; [custom] some custom-settings
