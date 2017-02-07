@@ -1,7 +1,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; [melpa]The head-line-command which tell emacs
-;;      to load package from .emacs.d/elpa
+;; [melpa]The head-line-command which tell emacs to load package from .emacs.d/elpa
 (when (>= emacs-major-version 24)
   (require 'package)
   (package-initialize)
