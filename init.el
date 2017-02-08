@@ -7,7 +7,9 @@
 (require 'init-keybindings)
 (require 'init-better-defaults)
 (require 'init-ui)
-(require 'custom)
+(require 'init-org)
 
+(setq custom-file (expand-file-name "init-profile/custom.el" user-emacs-directory))
+(load-file custom-file)
 
 

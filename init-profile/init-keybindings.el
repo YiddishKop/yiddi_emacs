@@ -23,5 +23,6 @@
 (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
 ;; [kb] hippie-expand
 (global-set-key (kbd "s-/") 'hippie-expand)
-
+;; [kb] counsel-git, which used for finding file under git control
+(global-set-key (kbd "C-c h f") 'counsel-git)
 (provide 'init-keybindings)

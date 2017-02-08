@@ -6,6 +6,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(company-idle-delay 0.1)
+ '(company-minimum-prefix-length 1)
  '(custom-safe-themes
    (quote
     ("c7a9a68bd07e38620a5508fef62ec079d274475c8f92d75ed0c33c45fbe306bc" default))))

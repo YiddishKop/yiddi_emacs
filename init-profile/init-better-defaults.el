@@ -19,9 +19,6 @@
 (global-hl-line-mode t)
 ;; [set]start-up full screen
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
-;; [set]agenda-file
-(setq org-agenda-files '("~/org"))
-(global-set-key (kbd "C-c a") 'org-agenda)
 ;; [set]auto revert
 (global-auto-revert-mode t)
 ;; [set]stop backup automaticly
