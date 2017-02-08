@@ -1,5 +1,5 @@
+;; Modify default settings of emacs for better
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; [set]display line number
 (linum-mode 1)
 ;; [set]close start-up
@@ -59,5 +59,18 @@
 					 try-expand-all-abbrevs
 					 try-expand-line
 					 try-expand-line))
+
+;; [set] yes-or-no -> y-or-n
+(fset 'yes-or-no-p 'y-or-n-p)
+;; [set] DIRED SETTINGS
+(setq dired-recursive-copies t)
+(setq dired-recursive-deletes t)
+;; every time we open dired-mode will create a new buffer.
+;; this function will hold only one dired buffer all the times
+(put 'dired-find-alternate-file 'disabled nil)
+;; [set] dwim-target, copy file between 2 dired buffer
+(setq dired-dwim-target t)
+
+(require 'dired-x)
 
 (provide 'init-better-defaults)
