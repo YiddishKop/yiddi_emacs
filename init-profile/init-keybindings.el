@@ -24,7 +24,7 @@
 ;; [kb] hippie-expand
 (global-set-key (kbd "s-/") 'hippie-expand)
 ;; [kb] counsel-git, which used for finding file under git control
-(global-set-key (kbd "C-c h f") 'counsel-git)
+(global-set-key (kbd "C-c p f") 'counsel-git)
 ;; (require 'dired) ;; too slow for loading
 ;; with-eval-after-load will eval (define...) after dired-mode be used
 (with-eval-after-load 'dired

@@ -13,6 +13,8 @@
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
+;; [set]highlight the other when curson on one paren
+(add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 ;; [set]choosed to delete
 (delete-selection-mode t)
 ;; [set]hignlight cursor line

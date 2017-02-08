@@ -44,8 +44,10 @@
 (setq ivy-use-virtual-buffers t)
 ;; [pkg] smartparens
 (require 'smartparens-config)
-;(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
+;; [pkg] make smartparens global avaiable
 (smartparens-global-mode t)
+;; [pkg] this will make NOT complete single quote in emacs-lisp
+(sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
 ;; [pkg] anaconda-mode
 (add-hook 'python-mode-hook 'anaconda-mode)
 ;; [pkg] popwin
