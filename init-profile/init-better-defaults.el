@@ -15,6 +15,14 @@
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 ;; [set]highlight the other when curson on one paren
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
+;; [set]highlight the both paren when curson in middle
+;(require 'nadvice)
+;(define-advice show-paren-function (:around (fn) fix-show-paren-function)
+;  "Highlight enclosing parens."
+;  (cond ((looking-at-p "\\s(") (funcall fn))
+;	(t (save-excursion
+;	     (ignore-errors (backward-up-list))
+;	     (funcall fn)))))
 ;; [set]choosed to delete
 (delete-selection-mode t)
 ;; [set]hignlight cursor line
