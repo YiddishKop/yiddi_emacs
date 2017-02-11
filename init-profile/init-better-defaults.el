@@ -1,7 +1,7 @@
 ;; Modify default settings of emacs for better
 
 ;; [set]display line number
-(linum-mode 1)
+(global-linum-mode t)
 ;; [set]close start-up
 (setq inhibit-splash-screen t)
 ;; [set]open recentf-mode

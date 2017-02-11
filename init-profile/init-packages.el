@@ -33,6 +33,7 @@
 			 evil-leader
 			 window-numbering
 			 powerline
+			 evil-surround
 			 ) "Default packages")
 (defun yiddi/package-installed-p ()
   (loop for pkg in yiddi/packages
