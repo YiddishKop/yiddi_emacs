@@ -24,6 +24,8 @@
 			 popwin        ;; auto allocate cursor to help window
 			 expand-region ;; a fabulous pkg for selected chars by keyboard
 			 iedit         ;; edit a vertical region one time
+			 org-pomodoro  ;; a tomato-related time-agenda method
+			 helm-ag       ;; good for search *file-content* in project
 			 ) "Default packages")
 (defun yiddi/package-installed-p ()
   (loop for pkg in yiddi/packages

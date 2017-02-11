@@ -34,5 +34,16 @@
 ;; [kb] 2 M-s key-bingdings
 (global-set-key (kbd "M-s o") 'occur-dwim) ;; improve occur-mode ,when cursor in a word(or selected),use it as search key word
 (global-set-key (kbd "M-s i") 'counsel-imenu) ;; find all function-names in a file
-
+(global-set-key (kbd "M-s e") 'iedit-mode) ;; 
+;; [kb] 2 org-hotkeys
+(global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "C-c r") 'org-capture)
+;; [kb] bind company-mode select-up and down from m-n p to C-n p
+(with-eval-after-load 'company
+  (define-key company-active-map (kbd "M-n") nil)
+  (define-key company-active-map (kbd "M-p") nil)
+  (define-key company-active-map (kbd "C-n") #'company-select-next)
+  (define-key company-active-map (kbd "C-p") #'company-select-previous))
+;; [kb] helm-ag , helm-ag
+(global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
 (provide 'init-keybindings)

@@ -1,0 +1,8 @@
+* Quick notes
+
+** TODO [#C] do some good breakfast
+   SCHEDULED: <2017-02-11 六 14:00>
+
+** TODO [#C] day6 spacemacs
+1. helm-ag 搜索之后直接可以 c-c c-e 可以直接开辟一个新的buffer，*并可以进行直接修改*，简直神技。 
+
