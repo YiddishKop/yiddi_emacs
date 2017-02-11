@@ -6,3 +6,13 @@
 ** TODO [#C] day6 spacemacs
 1. helm-ag 搜索之后直接可以 c-c c-e 可以直接开辟一个新的buffer，*并可以进行直接修改*，简直神技。 
 
+** TODO [#C] day6
+occur-dwin in occur-mode, has the ability to find all content you search, when you search, you can switch to new-established window
+and press 'e' to edit, press c-c c-c when finished, or c-c c-k to abandon.
+
+** TODO [#C] day6
+in dired-mode ,you can *C-x c-q* to edit the table of contents
+
+** TODO [#C] day6
+flycheck's useful command flycheck-verify-setup, you can find the interpreter and excutor supply condition
+

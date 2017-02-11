@@ -1,4 +1,4 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; package --- summary;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; [melpa]The head-line-command which tell emacs to load package from .emacs.d/elpa
 (when (>= emacs-major-version 24)
@@ -26,6 +26,9 @@
 			 iedit         ;; edit a vertical region one time
 			 org-pomodoro  ;; a tomato-related time-agenda method
 			 helm-ag       ;; good for search *file-content* in project
+			 flycheck
+			 yasnippet
+			 auto-yasnippet
 			 ) "Default packages")
 (defun yiddi/package-installed-p ()
   (loop for pkg in yiddi/packages
@@ -54,7 +57,11 @@
 (sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
 ;; [pkg] anaconda-mode
 (add-hook 'python-mode-hook 'anaconda-mode)
+
 ;; [pkg] popwin
 (require 'popwin)
 (popwin-mode 1)
+;; [pkg]  make flycheck-mode active for python-mode
+(add-hook 'python-mode-hook 'flycheck-mode)
+
 (provide 'init-packages)
