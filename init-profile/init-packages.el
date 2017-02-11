@@ -22,6 +22,8 @@
 			 smartparens   ;; auto-complete bracket and quote etc.
 			 anaconda-mode ;; for python-mode
 			 popwin        ;; auto allocate cursor to help window
+			 expand-region ;; a fabulous pkg for selected chars by keyboard
+			 iedit         ;; edit a vertical region one time
 			 ) "Default packages")
 (defun yiddi/package-installed-p ()
   (loop for pkg in yiddi/packages
@@ -53,5 +55,4 @@
 ;; [pkg] popwin
 (require 'popwin)
 (popwin-mode 1)
-
 (provide 'init-packages)

@@ -29,6 +29,10 @@
 ;; with-eval-after-load will eval (define...) after dired-mode be used
 (with-eval-after-load 'dired
     (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
-
+;; [kb] expand-region-mode key-bingdings
+(global-set-key (kbd "C-=") 'er/expand-region)
+;; [kb] 2 M-s key-bingdings
+(global-set-key (kbd "M-s o") 'occur-dwim) ;; improve occur-mode ,when cursor in a word(or selected),use it as search key word
+(global-set-key (kbd "M-s i") 'counsel-imenu) ;; find all function-names in a file
 
 (provide 'init-keybindings)

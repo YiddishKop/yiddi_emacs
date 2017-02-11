@@ -1,21 +1,15 @@
-;; close tool bar					;
-(tool-bar-mode -1)
-;; close scroll bar
-(scroll-bar-mode -1)
-;; display line number
-(linum-mode 1)
-;; close start-up
-(setq inhibit-splash-screen t)
-;; open recentf-mode
-(recentf-mode t)
-;; change cursor type to bar
-(setq cursor-type bar)
+;; All the settings are sort into 5 files.
+;; [!!!]init-packages should always be the first
+
+(add-to-list 'load-path "~/.emacs.d/init-profile/")
+
+(require 'init-packages)
+(require 'init-keybindings)
+(require 'init-better-defaults)
+(require 'init-ui)
+(require 'init-org)
+
+(setq custom-file (expand-file-name "init-profile/custom.el" user-emacs-directory))
+(load-file custom-file)
 
 
-;; bind a hotkey to open my init.el file
-(defun open-my-init-file ()
-  (interactive)
-  (message "start my file")
-  (find-file "~/.emacs.d/init.el"))
-
-(global-set-key (kbd "<f5>") 'open-my-init-file)
