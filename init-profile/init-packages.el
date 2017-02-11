@@ -29,6 +29,10 @@
 			 flycheck
 			 yasnippet
 			 auto-yasnippet
+			 evil
+			 evil-leader
+			 window-numbering
+			 powerline
 			 ) "Default packages")
 (defun yiddi/package-installed-p ()
   (loop for pkg in yiddi/packages
@@ -63,5 +67,38 @@
 (popwin-mode 1)
 ;; [pkg]  make flycheck-mode active for python-mode
 (add-hook 'python-mode-hook 'flycheck-mode)
+;; [pkg] yasnippet
+(require 'yasnippet)
+(yas-reload-all)
+(add-hook 'prog-mode-hook #'yas-minor-mode)
+;; [pkg] evil
+(evil-mode 1)
+(setcdr evil-insert-state-map nil)
+(define-key evil-insert-state-map [escape] 'evil-normal-state)
+;; [pkg] evil-leader, from this can we cal some useful fucntion by SPC+e/b/k
+;;       Oh-shit! tai bang le !
+(global-evil-leader-mode)
+(evil-leader/set-key
+  "ff" 'find-file
+  "fr" 'recentf-open-files
+  "bk" 'kill-buffer
+  "bb" 'switch-to-buffer
+  "pf" 'counsel-git
+  "ps" 'helm-do-ag-project-root
+  "0" 'select-window-0
+  "1" 'select-window-1
+  "2" 'select-window-2
+  "3" 'select-window-3
+  "4" 'select-window-4
+  "w/" 'split-window-right
+  "w~" 'split-window-below
+  ":" 'counsel-M-x
+  "wm" 'delete-other-windows)
+
+;; [pkg] window-numbering
+(window-numbering-mode 1)
+;; [pkg] powerline
+(require 'powerline)
+(powerline-default-theme)
 
 (provide 'init-packages)

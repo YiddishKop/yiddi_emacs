@@ -46,4 +46,9 @@
   (define-key company-active-map (kbd "C-p") #'company-select-previous))
 ;; [kb] helm-ag , helm-ag
 (global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
+(global-set-key (kbd "C-w") 'backward-kill-word)
+;; [kb] auto-yasnippet
+(global-set-key (kbd "H-w") #'aya-create) ;;
+(global-set-key (kbd "H-y") #'aya-expand) ;;
+
 (provide 'init-keybindings)
