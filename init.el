@@ -8,6 +8,15 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+
+;;----- supported by cask and pllet--------
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+(require 'pallet)
+(pallet-mode t)
+;;----- supported by cask and pllet--------
+
+
 (add-to-list 'load-path "~/.emacs.d/init-profile/")
 
 (require 'init-packages)

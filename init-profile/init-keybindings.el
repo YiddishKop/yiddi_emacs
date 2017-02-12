@@ -24,7 +24,7 @@
 ;; [kb] hippie-expand
 (global-set-key (kbd "s-/") 'hippie-expand)
 ;; [kb] counsel-git, which used for finding file under git control
-(global-set-key (kbd "C-c p f") 'counsel-git)
+;; (global-set-key (kbd "C-c p f") 'counsel-git)
 ;; (require 'dired) ;; too slow for loading
 ;; with-eval-after-load will eval (define...) after dired-mode be used
 (with-eval-after-load 'dired
@@ -45,7 +45,7 @@
   (define-key company-active-map (kbd "C-n") #'company-select-next)
   (define-key company-active-map (kbd "C-p") #'company-select-previous))
 ;; [kb] helm-ag , helm-ag
-(global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
+;; (global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
 (global-set-key (kbd "C-w") 'backward-kill-word)
 ;; [kb] auto-yasnippet
 (global-set-key (kbd "H-w") #'aya-create) ;;

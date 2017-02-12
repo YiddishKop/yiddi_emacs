@@ -16,3 +16,27 @@ in dired-mode ,you can *C-x c-q* to edit the table of contents
 ** TODO [#C] day6
 flycheck's useful command flycheck-verify-setup, you can find the interpreter and excutor supply condition
 
+** TODO [#C]
+# ssdfsdf sdfsdfsd 
+# sdfsdfsd sdfsdfsdf 
+# sdfsdfsd sdfsdfsd sd 
+
+# hello
+# helow
+
+sdfsdf sdfsdfsdfsdf 
+u 
+unless
+
+
+# UUUU
+
+# uuuu
+
+# iiii
+
+hhhh
+
+yyyy
+
+

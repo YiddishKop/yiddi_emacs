@@ -14,9 +14,12 @@
  '(evil-want-C-u-scroll t)
  '(package-selected-packages
    (quote
-    (powerline window-numbering evil-leader evil expand-region smartparens popwin monokai-theme hungry-delete counsel company anaconda-mode)))
+    (use-package smartparens auto-yasnippet evil-surround flycheck helm-ag helm-core iedit org-pomodoro pkg-info popup pythonic s shut-up swiper undo-tree yasnippet pallet mwe-log-commands which-key powerline-evil evil-nerd-commenter powerline window-numbering evil-leader evil expand-region popwin monokai-theme hungry-delete counsel company anaconda-mode)))
  '(popwin:popup-window-position (quote right))
- '(popwin:popup-window-width 50))
+ '(popwin:popup-window-width 50)
+ '(which-key-frame-max-height 100)
+ '(which-key-idle-delay 0.1)
+ '(which-key-max-display-columns 8))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
