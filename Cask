@@ -5,6 +5,7 @@
 (depends-on "async")
 (depends-on "auto-yasnippet")
 (depends-on "cask")
+(depends-on "chinese-pyim")
 (depends-on "company")
 (depends-on "counsel")
 (depends-on "dash")

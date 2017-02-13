@@ -39,4 +39,8 @@ hhhh
 
 yyyy
 
+** TODO [#C] ubuntu startup hotkeys
+| cap->ctrl | dpkg-reconfigure keyboard-configure |
+| M-f7      | move-windown                        |
+| M-SPC     | window-menu                         |
 

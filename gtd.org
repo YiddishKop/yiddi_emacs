@@ -7,3 +7,7 @@
 ** TODO [#B] have a party with Miao-feng
    SCHEDULED: <2017-02-11 六 13:00>
 
+** TODO [#B] day7 saowei gongzuo go on studing the cask with different version of emacs
+
+** TODO [#B] day8 go on studing use-package,and settings about it.
+
