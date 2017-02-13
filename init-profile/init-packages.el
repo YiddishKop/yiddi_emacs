@@ -138,11 +138,11 @@
 
 ;; chinese-pyim
 (use-package chinese-pyim
-  :ensure nil
+  :ensure t
   :config
   ;; 激活 basedict 拼音词库
   (use-package chinese-pyim-basedict
-    :ensure nil
+    :ensure t
     :config (chinese-pyim-basedict-enable))
 
   (setq default-input-method "chinese-pyim")
