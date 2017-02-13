@@ -25,6 +25,7 @@
 (depends-on "hungry-delete")
 (depends-on "iedit")
 (depends-on "ivy")
+(depends-on "jedi")
 (depends-on "log4e")
 (depends-on "monokai-theme")
 (depends-on "mwe-log-commands")

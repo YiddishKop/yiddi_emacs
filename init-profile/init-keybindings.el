@@ -52,4 +52,6 @@
 (global-set-key (kbd "H-y") #'aya-expand) ;;
 ;; chines-pyim
 (global-set-key (kbd "C-\\") 'toggle-input-method)
+(global-set-key (kbd "M-j") 'pyim-convert-code-at-point)
+      
 (provide 'init-keybindings)

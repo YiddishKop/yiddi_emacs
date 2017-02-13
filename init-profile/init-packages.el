@@ -137,49 +137,57 @@
 (which-key-mode 1)
 
 ;; chinese-pyim
-(use-package chinese-pyim
-  :ensure t
-  :config
-  ;; 激活 basedict 拼音词库
-  (use-package chinese-pyim-basedict
-    :ensure t
-    :config (chinese-pyim-basedict-enable))
+(require 'chinese-pyim)
+(require 'chinese-pyim-basedict) ; 拼音词库设置，五笔用户 *不需要* 此行设置
+(chinese-pyim-basedict-enable)   ; 拼音词库，五笔用户 *不需要* 此行设置;
 
-  (setq default-input-method "chinese-pyim")
+;; (use-package chinese-pyim
+;;   :ensure t
+;;   :config
+;;   (message "hello 1")
+;;   ;; 激活 basedict 拼音词库
+;;   (use-package chinese-pyim-basedict
+;;     :ensure t
+;;     :config (chinese-pyim-basedict-enable))
 
-  ;; 我使用全拼
-  (setq pyim-default-scheme 'quanpin)
+;;   (message "hello 22222")
+;;   (setq default-input-method "chinese-pyim")
 
-  ;; 设置 pyim 探针设置，这是 pyim 高级功能设置，可以实现 *无痛* 中英文切换 :-)
-  ;; 我自己使用的中英文动态切换规则是：
-  ;; 1. 光标只有在注释里面时，才可以输入中文。
-  ;; 2. 光标前是汉字字符时，才能输入中文。
-  ;; 3. 使用 M-j 快捷键，强制将光标前的拼音字符串转换为中文。
-  (setq-default pyim-english-input-switch-functions
-                '(pyim-probe-dynamic-english
-                  pyim-probe-isearch-mode
-                  pyim-probe-program-mode
-                  pyim-probe-org-structure-template))
+;;   ;; 我使用全拼
+;;   (setq pyim-default-scheme 'quanpin)
 
-  (setq-default pyim-punctuation-half-width-functions
-                '(pyim-probe-punctuation-line-beginning
-                  pyim-probe-punctuation-after-punctuation))
+;;   ;; 设置 pyim 探针设置，这是 pyim 高级功能设置，可以实现 *无痛* 中英文切换 :-)
+;;   ;; 我自己使用的中英文动态切换规则是：
+;;   ;; 1. 光标只有在注释里面时，才可以输入中文。
+;;   ;; 2. 光标前是汉字字符时，才能输入中文。
+;;   ;; 3. 使用 M-j 快捷键，强制将光标前的拼音字符串转换为中文。
+;;   (setq-default pyim-english-input-switch-functions
+;;                 '(pyim-probe-dynamic-english
+;;                   pyim-probe-isearch-mode
+;;                   pyim-probe-program-mode
+;;                   pyim-probe-org-structure-template))
 
-  ;; 开启拼音搜索功能
-  (setq pyim-isearch-enable-pinyin-search t)
+;;   (message "hello sssssss")
+;;   (setq-default pyim-punctuation-half-width-functions
+;;                 '(pyim-probe-punctuation-line-beginning
+;;                   pyim-probe-punctuation-after-punctuation))
 
-  ;; 使用 pupup-el 来绘制选词框
-  (setq pyim-page-tooltip 'popup)
+;;   ;; 开启拼音搜索功能
+;;   (setq pyim-isearch-enable-pinyin-search t)
 
-  ;; 选词框显示5个候选词
-  (setq pyim-page-length 5)
+;;   ;; 使用 pupup-el 来绘制选词框
+;;   (setq pyim-page-tooltip 'popup)
 
-  ;; 让 Emacs 启动时自动加载 pyim 词库
-  (add-hook 'emacs-startup-hook
-            #'(lambda () (pyim-restart-1 t)))
-  :bind
-  (("M-j" . pyim-convert-code-at-point) ;与 pyim-probe-dynamic-english 配合
-   ("C-;" . pyim-delete-word-from-personal-buffer)))
+;;   ;; 选词框显示5个候选词
+;;   (setq pyim-page-length 5)
+
+;;   ;; 让 Emacs 启动时自动加载 pyim 词库
+;;   (add-hook 'emacs-startup-hook
+;;             #'(lambda () (pyim-restart-1 t)))
+;;   (message "hello bind")
+;;   :bind
+;;  (("M-j" . pyim-convert-code-at-point) ;与 pyim-probe-dynamic-english 配合
+;;    ("C-;" . pyim-delete-word-from-personal-buffer)))
 
 
 
