@@ -181,7 +181,6 @@
   (("M-j" . pyim-convert-code-at-point) ;与 pyim-probe-dynamic-english 配合
    ("C-;" . pyim-delete-word-from-personal-buffer)))
 
-(setq default-input-method "chinese-pyim")
 
 
 (provide 'init-packages)
