@@ -6,6 +6,18 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
+
+;; !!! 半成品,仅供参考
+
+;; [TOOD-list]
+;;    - 1. 光标在中间,两边括号不高亮;
+;;    - 2. anaconda-mode 启用失败,一直server-error
+
+;; [Before run-emacs]
+;;    - 需要安装cask,而后通过cask install进行初始安装.
+;;    - 想继续使用ananoda-mode,需要先安装python-pip,然后通过pip install 安装jedi,安装anaconda-mode
+
+
 (package-initialize)
 
 
