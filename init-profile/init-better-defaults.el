@@ -1,5 +1,16 @@
 ;; Modify default settings of emacs for better
 
+;; encoding system & lang system
+(set-language-environment 'utf-8)
+(set-keyboard-coding-system 'utf-8) ; For old Carbon emacs on OS X only
+(setq locale-coding-system 'utf-8)
+(set-default-coding-systems 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(unless (eq system-type 'windows-nt)
+  (set-selection-coding-system 'utf-8))
+(prefer-coding-system 'utf-8)
+
+
 ;; [set]display line number
 (global-linum-mode t)
 ;; [set]close start-up

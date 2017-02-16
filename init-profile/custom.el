@@ -5,7 +5,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(company-idle-delay 0.1)
+ '(company-idle-delay 0.5)
  '(company-minimum-prefix-length 1)
  '(custom-safe-themes
    (quote
@@ -14,7 +14,7 @@
  '(evil-want-C-u-scroll t)
  '(package-selected-packages
    (quote
-    (jedi chinese-pyim use-package smartparens auto-yasnippet evil-surround flycheck helm-ag helm-core iedit org-pomodoro pkg-info popup pythonic s shut-up swiper undo-tree yasnippet pallet mwe-log-commands which-key powerline-evil evil-nerd-commenter powerline window-numbering evil-leader evil expand-region popwin monokai-theme hungry-delete counsel company anaconda-mode)))
+    (jedi company-anaconda use-package smartparens auto-yasnippet evil-surround flycheck helm-ag helm-core iedit org-pomodoro pkg-info popup pythonic s shut-up swiper undo-tree yasnippet pallet mwe-log-commands which-key powerline-evil evil-nerd-commenter powerline window-numbering evil-leader evil expand-region popwin monokai-theme hungry-delete counsel anaconda-mode)))
  '(popwin:popup-window-position (quote right))
  '(popwin:popup-window-width 50)
  '(which-key-frame-max-height 100)

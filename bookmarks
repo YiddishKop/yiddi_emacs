@@ -3,8 +3,8 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/.emacs.d/notes.org")
- (front-context-string . "** TODO [#C] eli")
- (rear-context-string . "*test*\")\n    )\n\n")
- (position . 3322))
+ (filename . "~/Documents/org-notes/notes-chrome.org")
+ (front-context-string . "** [[http://xmod")
+ (rear-context-string . "-8)\n#+END_QUOTE\n")
+ (position . 3680))
 )

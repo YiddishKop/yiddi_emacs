@@ -1,6 +1,9 @@
 ;; This setting-file is used to save all the keybinds
 
 ;; bind a hotkey to open my init.el file
+
+
+
 (defun open-my-init-file ()
   (interactive)
   (message "start my file")
@@ -50,8 +53,5 @@
 ;;  auto-yasnippet
 (global-set-key (kbd "H-w") #'aya-create) ;;
 (global-set-key (kbd "H-y") #'aya-expand) ;;
-;; chines-pyim
-(global-set-key (kbd "C-\\") 'toggle-input-method)
-(global-set-key (kbd "M-j") 'pyim-convert-code-at-point)
       
 (provide 'init-keybindings)
